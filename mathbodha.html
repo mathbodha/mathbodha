@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML being used -->
+<html lang="en">
+<head>
+  <!-- Character encoding ensures proper rendering of text -->
+  <meta charset="UTF-8" />
+  
+  <!-- Ensures mobile responsiveness and proper scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- Browser tab title -->
+  <title>MathBodha</title>
+
+  <!-- Favicon for browser tab icon -->
+  <link rel="icon" type="image/png" href="favicon.ico" sizes="32x32" />
+
+  <!-- Importing Google Fonts for typography -->
+  <!-- Poppins: General body and heading font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Fredoka: For a playful brand identity -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Lobster: Used for highlighting "Summer Classes" -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome: External icon library for social and functional icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- External CSS stylesheets (modular per section) -->
+  <link rel="stylesheet" href="home_page.css">
+  <link rel="stylesheet" href="programs_page.css">
+  <link rel="stylesheet" href="aboutUs_contact.css">
+</head>
+<body>
+
+  <!-- Marquee-style banner for inspirational math quotes -->
+  <div class="quote-marquee">
+    <div class="quote-text">
+      <!-- Multiple motivational math quotes separated with non-breaking space -->
+      “Mathematics is the language in which God has written the universe.” &nbsp;&nbsp;  &nbsp;&nbsp;
+      “Pure mathematics is, in its way, the poetry of logical ideas.”  &nbsp;&nbsp;  &nbsp;&nbsp;
+      “Math helps you learn problem-solving skills for real life.” &nbsp;&nbsp;
+    </div>
+  </div>
+
+  <!-- Main site navigation bar -->
+  <nav class="navbar">
+    <!-- Logo area including image and brand name -->
+    <div class="logo">
+      <img src="logo.jpg" alt="MathBodha Logo" class="logo-img" />
+      <span class="math-title">
+        <span class="math">MATH</span><span class="ease">BODHA</span>
+      </span>
+    </div>
+    
+    <!-- Hamburger icon for mobile menu toggle -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <!-- Navigation links to key sections and pages -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="mathbodha.html">Home</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSckSEgWG9DljVHsQpdtgHvv7ygFi-K3DBiAhgssvc3uoPNH3Q/viewform">Book a Session</a></li>
+      <li><a href="#about_Us">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner for summer class promotion with icon -->
+  <div class="summer-banner">
+    <i class="fas fa-bell"></i>
+    <span class="intro-text">We are now starting our </span>
+    <span class="summer-highlight">Summer Classes</span>
+  </div>
+
+  <!-- Hero section with welcome message and key benefits -->
+  <section class="hero">
+    <div class="hero-container">
+      <!-- Left side: text content -->
+      <div class="hero-text">
+        <h1>Welcome to <span class="math">Math</span><span class="ease">Bodha</span></h1>
+        <h2>Making Math Fun and Easy for Kids!</h2>
+        <ul>
+          <li>Engaging programs for Grades 1–8.</li>
+          <li>Build math confidence with every session.</li>
+          <li>Developed to make every child love learning math.</li>
+        </ul>
+        <!-- Call to action: Opens a registration form -->
+        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSckSEgWG9DljVHsQpdtgHvv7ygFi-K3DBiAhgssvc3uoPNH3Q/viewform')">
+          Register for a Free Trial
+        </button>
+      </div>
+      
+      <!-- Right side: supportive image -->
+      <div class="hero-image">
+        <img src="Home_page_pic.jpg" alt="Happy child learning online" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Script for toggling the mobile navigation menu -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('show');
+    });
+  </script>
+
+  <!-- Programs Section (flip card layout) -->
+  <section class="about-section" id="programs">
+    <h2 class="about-heading">
+      Discover the math journey that <br>
+      works best for your child.<br> 
+      Every student learns differently;<br>
+      <span class="highlight">we make sure they learn deeply</span>
+    </h2>
+
+    <div class="about-container">
+      <!-- Flip Card 1: Intro Session -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="card 1.jpg" alt="Intro Session">
+            <h3>Intro Session with <br> Parent + Child</h3>
+          </div>
+          <div class="flip-back">
+            <h4>15–20 minute introductory session</h4>
+            <ul>
+              <li>Meet the tutor, see the teaching style</li>
+              <li>Ask/answer concept-based questions</li>
+              <li>Foundation for personalized planning</li>
+              <li>Comfort and trust for both parent & child</li>
+              <li>Clarity on expectations and methods</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 2: One-on-One Tutoring -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="card 2.jpg" alt="1-on-1 Tutoring">
+            <h3>1-on-1 Tutoring</h3>
+          </div>
+          <div class="flip-back">
+            <h4>100% personalized sessions</h4>
+            <ul>
+              <li>Supports Grades 1–8 & college-level</li>
+              <li>Ideal for consistent, customized support</li>
+              <li>Flexible session scheduling</li>
+              <li>Help with homework & test prep</li>
+              <li>Develops confident, independent learners</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 3: Summer Camps -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="card 3.jpg" alt="Holiday / Summer Camps">
+            <h3>Holiday / Summer Camps</h3>
+          </div>
+          <div class="flip-back">
+            <h4>Fun learning during school breaks</h4>
+            <ul>
+              <li>Includes games, puzzles, real-world math</li>
+              <li>Prevents learning loss over vacation</li>
+              <li>Designed for Grades 1–8</li>
+              <li>Encourages creative thinking</li>
+              <li>Keeps young minds active and curious over the holidays</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flip card interaction script (click to toggle) -->
+  <script>
+    document.querySelectorAll('.flip-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+      });
+    });
+  </script>
+
+  <!-- Why MathBodha Section -->
+  <section class="why-mathbodha-testimonial" id="about_Us">
+    <div class="testimonial-left">
+      <!-- Textual explanation of value proposition -->
+      <div class="testimonial-text">
+        <h3>Why Math Bodha?</h3>
+        <p>
+          MathBodha offers a personalized, interactive math journey to build core understanding, especially in Grades 1 to 8. The goal is to nurture confidence and love for learning math.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slideshow of testimonial or program-related images -->
+    <div class="testimonial-right">
+      <div class="slider">
+        <!-- Navigation arrows -->
+        <span class="arrow left" onclick="prevSlide()">&#10094;</span>
+        <img id="sliderImage" src="why_mathbodha_1.jpg" alt="MathBodha Slide" />
+        <span class="arrow right" onclick="nextSlide()">&#10095;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript slideshow functionality -->
+  <script>
+    // Array of image paths for slideshow
+    const images = ['why_mathbodha_1.jpg', 'why_mathbodha_2.jpg', 'why_mathbodha_3.jpg', "why_mathbodha_4.jpg"];
+    let current = 0;
+
+    // Function to show image by index
+    function showSlide(index) {
+      current = (index + images.length) % images.length;
+      document.getElementById('sliderImage').src = images[current];
+    }
+
+    // Next/previous slide controls
+    function nextSlide() {
+      showSlide(current + 1);
+    }
+    function prevSlide() {
+      showSlide(current - 1);
+    }
+  </script>
+
+  <!-- What to Expect Section -->
+  <section class="what-to-expect-section">
+    <!-- Image representing confident student -->
+    <div class="expect-left">
+      <img src="what_u_expect.jpg" alt="Confident child learning online">
+    </div>
+    <!-- Text content about program benefits -->
+    <div class="expect-right">
+      <h2 class="section-subheading">What You Can Expect?</h2>
+      <p>
+        Each student gets a tailored learning path based on their needs. Sessions are engaging, interactive, and concept-focused — encouraging real understanding over rote memorization.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      
+      <!-- WhatsApp contact -->
+      <p>
+        <a href="tel:+1234567890" style="text-decoration: none;">
+          <i class="fas fa-phone" style="color: green; margin-right: 0px;"></i>
+              <span style="color: black;">+1 (312) 550-9950 </span>
+        </a>
+
+
+      </p>
+
+      <!-- Email contact -->
+      <p><i class="fas fa-envelope"></i> mathbodha@gmail.com</p>
+    </div>
+  </section>
+
+</body>
+</html>

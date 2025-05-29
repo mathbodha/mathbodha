@@ -1,0 +1,421 @@
+/* ======= CSS RESET: Remove default spacing and ensure consistent box model ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======= Custom Font: Used for branding (likely logo or titles) ======= */
+@font-face {
+  font-family: 'MathBodhaCustom';
+  src: url('fonts/MATHBODHA.ttf') format('truetype');
+}
+
+/* ======= Global Styles: Body Background, Base Font, and Color Theme ======= */
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: url("Home_BG.jpg") no-repeat center center fixed; /* Full-screen background image */
+  background-size: cover;
+  color: #4a90e2; /* Primary theme color */
+  line-height: 1.6; /* Improves readability */
+}
+
+/* ======= Scrolling Quote Banner at Top of Page ======= */
+.quote-marquee {
+  background-color: #4a90e2; /* Blue background */
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.quote-text {
+  white-space: nowrap; /* Prevent wrapping */
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-left: 100%; /* Start offscreen */
+  display: inline-block;
+  animation: scroll-left 15s linear infinite; /* Moves text left continuously */
+}
+
+/* ======= Summer Classes Banner: Highlight special announcements ======= */
+.summer-banner {
+  background-color: #FFFF00; /* Yellow background */
+  text-align: center;
+  padding: 14px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.summer-banner i {
+  margin-right: 10px;
+  color: #e91e63; /* Pink bell icon */
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.summer-banner .intro-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.summer-banner .summer-highlight {
+  color: #f27a1a; /* Orange for emphasis */
+  font-family: 'Lobster', cursive;
+  font-size: 1.6rem;
+}
+
+/* ======= Animation: Text scrolls from right to left ======= */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ======= Navigation Bar: Flex layout, spacing, and shadow ======= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* ======= Logo: Image and brand name side-by-side ======= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain; /* Maintains aspect ratio */
+}
+
+/* ======= Brand Text: "MATHBODHA" with custom font and color split ======= */
+.math-title {
+  font-size: 26px;
+  font-family: 'MathBodhaCustom', 'Fredoka', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.math {
+  color: #2c5bbf; /* Blue */
+  font-weight: 700;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.ease {
+  color: #f27a1a; /* Orange */
+  font-weight: 700;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* ======= Hamburger Menu Toggle: Shown on small screens ======= */
+.menu-toggle {
+  display: none; /* Hidden on desktop */
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* ======= Nav Links: Horizontal layout, styled buttons ======= */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 14px;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.nav-links a:hover {
+  background-color: #f5f5f5;
+  color: #f27a1a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-shadow: none;
+}
+
+/* ======= Hero Section: Welcoming block with image and features ======= */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* Hero Content Container: Flex layout with white background */
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  gap: 40px;
+}
+
+/* ======= Hero Text Column ======= */
+.hero-text {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #333;
+  font-family: 'Fredoka', sans-serif;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero-text .math {
+  color: #2c5bbf; /* Highlight "Math" */
+}
+
+.hero-text .ease {
+  color: #f27a1a; /* Highlight "Bodha" */
+}
+
+.hero-text h2 {
+  font-size: 1.4rem;
+  color: #3b5fc9;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-text ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.hero-text li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Custom bullet icon for hero list items */
+.hero-text li::before {
+  content: "✅ ";
+  color: #28c76f; /* Green checkmark */
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+/* ======= Call-to-Action Button ======= */
+.hero-text button {
+  background: #3b82f6; /* Blue */
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hero-text button:hover {
+  background: #2563eb; /* Darker blue on hover */
+}
+
+/* ======= Hero Image Column ======= */
+.hero-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* ===== Tablet Devices (width ≤ 1024px): Adjust navigation and layout ===== */
+@media (max-width: 1024px) {
+  .navbar {
+    /* Stack the navbar items more compactly for medium-width screens */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    /* Change from horizontal to vertical menu */
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Initially hidden until toggle is activated */
+  }
+
+  .nav-links.show {
+    /* Show the menu when toggled (e.g., hamburger is clicked) */
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center; /* Center-align menu items vertically */
+  }
+
+  .menu-toggle {
+    /* Show hamburger icon for collapsing navigation */
+    display: block;
+    margin-left: auto; /* Push to right side */
+  }
+}
+
+/* ===== Tablets Only (769px–1024px): Refine layout of hero section ===== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero-container {
+    /* Side-by-side layout with reduced spacing for tablets */
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .hero-text {
+    flex: 1;
+    padding-right: 10px; /* Some space between text and image */
+  }
+
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 320px; /* Scale image down for narrower screens */
+  }
+}
+
+/* ===== Mobile Devices (width ≤ 768px): Fully stacked layout and large touch targets ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    /* Ensure hamburger icon is visible */
+    display: block;
+    order: 2; /* Move to end in flex order */
+  }
+
+  .nav-links {
+    /* Make nav vertical and hidden by default */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    /* Display vertical nav links when menu is toggled */
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center; /* Center items vertically */
+  }
+
+  .nav-links li a {
+    padding: 12px; /* Increase padding for easier tapping */
+    font-size: 1.1rem;
+  }
+
+  .navbar {
+    /* Stack navbar elements vertically */
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    order: 1; /* Keep logo on top */
+  }
+
+  .hero-container {
+    /* Stack hero text and image vertically */
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%; /* Allow full width */
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem; /* Reduce heading size for smaller screens */
+  }
+
+  .hero-text h2 {
+    font-size: 1rem;
+  }
+
+  .hero-text ul {
+    margin-bottom: 20px;
+  }
+
+  .hero-text button {
+    width: 100%; /* Full-width button for mobile friendliness */
+  }
+
+  .hero-image img {
+    max-width: 350px; /* Reduce image size for mobile layout */
+  }
+}
+
+/* ===== Small Mobile Devices (width ≤ 480px): Optimize for compact screens ===== */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5rem; /* Smaller headline for tiny screens */
+  }
+
+  .hero-text h2 {
+    font-size: 0.9rem; /* Slightly smaller subheading */
+  }
+
+  .hero-text li {
+    font-size: 0.95rem; /* Slightly reduce bullet list size */
+  }
+
+  .hero-text button {
+    padding: 12px; /* Adjust padding for finger touch */
+    font-size: 0.95rem;
+  }
+
+  .hero-image img {
+    max-width: 300px; /* Restrict image width further */
+  }
+}

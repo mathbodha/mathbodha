@@ -1,0 +1,407 @@
+/* ========== WHY MATHBODHA TESTIMONIAL SECTION ========== */
+.why-mathbodha-testimonial {
+  display: flex; /* Layout: horizontal split */
+  height: 60vh; /* Fixed section height */
+  background-color: rgb(126, 131, 117); /* Muted greenish-gray background */
+  color: white; /* Text color */
+  font-family: 'Nunito', sans-serif; /* Clean, modern font */
+}
+
+.testimonial-left {
+  flex: 1; /* Occupies 50% of container */
+  padding: 30px 30px 30px 80px; /* More left padding for spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  text-align: justify; /* Neatly align paragraphs on both edges */
+}
+
+.testimonial-text h3 {
+  font-size: 3.0rem; /* Large heading */
+  font-weight: 700; /* Bold */
+  margin-bottom: 20px;
+}
+
+.testimonial-text p {
+  font-size: 1.8rem;
+  line-height: 1.6; /* More readable line spacing */
+  font-style: italic;
+}
+
+.testimonial-author {
+  margin-top: 30px; /* Space above author name */
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.testimonial-right {
+  flex: 1; /* Occupies 50% of container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.testimonial-right img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures image fills and fits well */
+}
+
+/* Branding highlight colors for the brand name */
+.highlight-math {
+  color: #2c5bbf; /* Blue for "Math" */
+}
+.highlight-bodha {
+  color: #f27a1a; /* Orange for "Bodha" */
+}
+
+
+/* ========== WHAT TO EXPECT SECTION ========== */
+.what-to-expect-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(96, 97, 94); /* Consistent theme color */
+  color: white;
+  padding: 60px 80px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.expect-left {
+  flex: 1;
+  display: flex;
+  margin-left: -200px; /* Pulls image out to left edge visually */
+  justify-content: center;
+}
+
+.expect-left img {
+  max-width: 550px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); /* Soft depth effect */
+}
+
+.expect-right {
+  flex: 1;
+  max-width: 700px;
+  padding-left: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.expect-right h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  /* Text color is inherited as white */
+}
+
+.expect-right p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+
+/* ========== CONTACT SECTION ========== */
+.contact-section {
+  height: 30vh; /* Fixed height unless overridden */
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-container {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  color: #2c5bbf; /* Brand blue */
+  margin-bottom: 20px;
+  margin-top: -60px; /* Pulls heading upward */
+}
+
+.contact-container p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* WhatsApp icon color and style */
+.contact-container i.fab.fa-whatsapp {
+  color: #25D366;
+  font-weight: bold;
+}
+
+/* WhatsApp link styling */
+.whatsapp-link {
+  color: #25D366;
+  text-decoration: none;
+  font-weight: 500;
+}
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+/* Extra space above second <p> (email row) */
+.contact-container p:nth-of-type(2) {
+  margin-top: 16px;
+}
+
+/* Email icon styling */
+.contact-container i.fas.fa-envelope {
+  color: #f27a1a;
+  margin-right: 2.0px;
+  font-weight: bold;
+}
+
+
+/* ========== REDUNDANT BLOCK for .why-mathbodha-testimonial (can be merged) ========== */
+.why-mathbodha-testimonial {
+  display: flex;
+  background-color: #666; /* Override previous background */
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial-left {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.testimonial-text h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+
+/* ========== SLIDER ========== */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Arrows for navigating the slider */
+.arrow {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 50%;
+  user-select: none; /* Prevent accidental text selection */
+}
+
+.arrow.left {
+  left: 10px;
+}
+.arrow.right {
+  right: 10px;
+}
+
+
+/* ========== COMMON BOX MODEL RESET ========== */
+.why-mathbodha-testimonial,
+.testimonial-left,
+.testimonial-text h3,
+.testimonial-text p,
+.testimonial-author,
+.testimonial-right,
+.testimonial-right img,
+.what-to-expect-section,
+.expect-left,
+.expect-left img,
+.expect-right,
+.expect-right h2,
+.expect-right p,
+.contact-section,
+.contact-container,
+.contact-container h2,
+.contact-container p {
+  box-sizing: border-box;
+}
+
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Tablets and smaller (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .why-mathbodha-testimonial,
+  .what-to-expect-section {
+    flex-direction: column; /* Stack vertically */
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .testimonial-left,
+  .testimonial-right,
+  .expect-left,
+  .expect-right {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .expect-left {
+    margin-left: 0; /* Reset large negative margin */
+  }
+
+  .testimonial-text h3,
+  .expect-right h2 {
+    font-size: 2rem;
+    text-align: center; /* Center titles on smaller screens */
+  }
+
+  .testimonial-text p,
+  .expect-right p,
+  .contact-container p {
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+
+  .testimonial-right img,
+  .expect-left img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-container h2 {
+    margin-top: 10px;
+  }
+
+  .contact-section {
+    height: auto;        /* Makes it adjust naturally */
+    min-height: 200px;   /* Ensures it's tall enough */
+    padding: 40px 40px 20px 10px;
+  }
+}
+
+/* Reusable spacing tweaks */
+.contact-container p {
+  margin-bottom: 6px;
+}
+.contact-container p:nth-of-type(2) {
+  margin-top: 6px;
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .testimonial-text h3,
+  .expect-right h2 {
+    font-size: 1.6rem;
+  }
+
+  .testimonial-text p,
+  .expect-right p,
+  .contact-container p {
+    font-size: 1.1rem;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+
+  .contact-section {
+    height: auto;
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+}
+
+/* Large desktop screens (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .testimonial-text h3,
+  .expect-right h2 {
+    font-size: 3rem;
+  }
+
+  .testimonial-text p,
+  .expect-right p {
+    font-size: 1.8rem;
+  }
+
+  .contact-container h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Ultra-wide displays (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .why-mathbodha-testimonial,
+  .what-to-expect-section {
+    padding: 80px 120px; /* Increase padding for large monitors */
+  }
+}
+
+/* Final spacing fix for multiple breakpoints */
+.contact-container p {
+  margin-bottom: 6px;
+}
+.contact-container p:nth-of-type(2) {
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .what-to-expect-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .expect-left img {
+    margin-bottom: 0 !important;
+    display: block;
+  }
+
+  .contact-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
