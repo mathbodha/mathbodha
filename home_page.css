@@ -36,7 +36,7 @@ body {
   color: white;
   padding-left: 100%; /* Start offscreen */
   display: inline-block;
-  animation: scroll-left 15s linear infinite; /* Moves text left continuously */
+  animation: scroll-left 26s linear infinite; /* Moves text left continuously */
 }
 
 /* ======= Summer Classes Banner: Highlight special announcements ======= */
